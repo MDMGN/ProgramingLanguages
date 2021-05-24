@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ProgramingLanguages</string>
+    <array name="programing_images">
+        <item>@drawable/c_info_image</item>
+        <item>@drawable/cplusplus_info_image</item>
+        <item>@drawable/csharp_info_image</item>
+        <item>@drawable/java_info_image</item>
+        <item>@drawable/js_info_image</item>
+        <item>@drawable/php_info_image</item>
+    </array>
+    <string name="title_c">C Lenguaje de programación</string>
+    <string name="title_cpluplus">C++ Lenguaje de programación</string>
+    <string name="title_csharp">C# Lenguaje de programación</string>
+    <string name="title_java">Java Lenguaje de programación</string>
+    <string name="title_javascript">JavaScript Lenguaje de programación</string>
+    <string name="title_php">PHP Lenguaje de programación</string>
 </resources>
