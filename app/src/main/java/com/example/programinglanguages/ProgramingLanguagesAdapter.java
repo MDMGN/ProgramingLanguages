@@ -1,6 +1,7 @@
 package com.example.programinglanguages;
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,11 +61,11 @@ public class ProgramingLanguagesAdapter extends RecyclerView.Adapter<ProgramingL
         @Override
         public void onClick(View v) {
             Toast.makeText(context, "Item pulsado", Toast.LENGTH_SHORT).show();
-            //int position = getLayoutPosition();
-            //ProgramingLanguages programingLanguage = programingLanguagesList.get(position);
-            //Intent intent = new Intent(context, .class);
-            //intent.putExtra("item", programingLanguage);
-            //context.startActivity(intent);
+            int position = getLayoutPosition();
+            ProgramingLanguages programingLanguage = programingLanguagesList.get(position);
+            Intent intent = new Intent(context, ProgramingLanguagesActivity.class);
+            intent.putExtra("item", programingLanguage);
+            context.startActivity(intent);
         }
     }
 }

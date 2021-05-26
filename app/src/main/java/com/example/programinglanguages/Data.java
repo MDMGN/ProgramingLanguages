@@ -13,12 +13,12 @@ public class Data {
     }
     public Data(){
         programingLanguagesList=new ArrayList<ProgramingLanguages>();
-        addProgramingLanguages(new ProgramingLanguages(R.string.title_c,"c_info_image"));
-        addProgramingLanguages(new ProgramingLanguages(R.string.title_cpluplus,"cplusplus_info_image"));
-        addProgramingLanguages(new ProgramingLanguages(R.string.title_csharp,"csharp_info_image"));
-        addProgramingLanguages(new ProgramingLanguages(R.string.title_csharp,"java_info_image"));
-        addProgramingLanguages(new ProgramingLanguages(R.string.title_csharp,"js_info_image"));
-        addProgramingLanguages(new ProgramingLanguages(R.string.title_csharp,"php_info_image"));
+        addProgramingLanguages(new ProgramingLanguages(R.string.title_c,R.string.c_info,"c_info_image"));
+        addProgramingLanguages(new ProgramingLanguages(R.string.title_cpluplus,R.string.cplusplus_info,"cplusplus_info_image"));
+        addProgramingLanguages(new ProgramingLanguages(R.string.title_csharp,R.string.csharp_info,"csharp_info_image"));
+        addProgramingLanguages(new ProgramingLanguages(R.string.title_java,R.string.java_info,"java_info_image"));
+        addProgramingLanguages(new ProgramingLanguages(R.string.title_javascript,R.string.js_info,"js_info_image"));
+        addProgramingLanguages(new ProgramingLanguages(R.string.title_php,R.string.php_info,"php_info_image"));
 
     }
     public static void inicializarDatos(){
