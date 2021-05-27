@@ -14,6 +14,13 @@
     <string name="title_java">Java </string>
     <string name="title_javascript">JavaScript</string>
     <string name="title_php">PHP</string>
+    <string name="title_python">Python</string>
+    <string name="title_ruby">Ruby</string>
+    <string name="title_kotlin">Kotlin</string>
+    <string name="title_swift">Swift</string>
+    <string name="title_go">GO</string>
+    <string name="title_cobol">Cobol</string>
+    <string name="title_pascal">Pascal</string>
     <string name="description_image">Imagen descriptiva del lenguaje de programación.</string>
     <string name="c_info">C es un lenguaje de programación de propósito general​ originalmente desarrollado por Dennis Ritchie entre 1969 y 1972 en los Laboratorios Bell, ​
         como evolución del anterior lenguaje B, a su vez basado en BCPL.​​​Al igual que B, es un lenguaje orientado a la implementación de sistemas operativos, concretamente Unix.</string>
@@ -27,6 +34,23 @@
         tipado y dinámico.</string>
     <string name="php_info">PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.​ Fue creado inicialmente por el programador danés-canadiense Rasmus Lerdorf
         en 1994.​ En la actualidad, la implementación de referencia de PHP es producida por The PHP Group.​</string>
+    <string name="python_info">Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ Se trata de un lenguaje de programación multiparadigma,
+        ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional.</string>
+    <string name="ruby_info">Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el programador japonés Yukihiro "Matz" Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo presentó públicamente en 1995.
+        Combina una sintaxis inspirada en Python y Perl con características de programación orientada a objetos similares a Smalltalk. Comparte también funcionalidad con otros 
+        lenguajes de programación como Lisp, Lua, Dylan y CLU. Ruby es un lenguaje de programación interpretado en una sola pasada y su implementación oficial es distribuida bajo una licencia de software 
+        libre.</string>
+    <string name="kotlin_info">Kotlin es un lenguaje de programación de tipado estático que corre sobre la máquina virtual de Java y que también puede ser compilado a código fuente de JavaScript. Es desarrollado principalmente por JetBrains en sus oficinas de San Petersburgo (Rusia). El nombre proviene de la isla de Kotlin, situada cerca de San Petersburgo.2​
+Kotlin fue nombrado lenguaje del mes por la revista Dr. Dobb Journal en su edición de enero de 2016.3​ Aunque no tiene una sintaxis compatible con Java, Kotlin está diseñado para interoperar con código Java y es dependiente del código Java de su biblioteca de clases, tal como pueda ser el entorno de colecciones de Java (Java collections framework).
+        Kotlin ha sido conocido por ser utilizado en la creación de aplicaciones de Android.</string>
+    <string name="swift_info">Swift es un lenguaje de programación multiparadigma creado por Apple enfocado en el desarrollo de aplicaciones para iOS y macOS. Fue presentado en la WWDC 2014​ y está diseñado para integrarse con los Frameworks Cocoa y Cocoa Touch; puede usar cualquier biblioteca programada en Objective-C y llamar a funciones de C.</string>
+    <string name="cobol_info">El lenguaje COBOL (acrónimo de COmmon Business-Oriented Language, Lenguaje Común Orientado a Negocios) fue creado en el año 1959 con el objetivo de crear un lenguaje de programación universal que pudiera ser usado en cualquier ordenador y que estuviera orientado principalmente a los negocios, es decir, a la llamada informática
+        de gestión.</string>
+<string name="pascal_info">Pascal es un lenguaje de programación creado por el profesor suizo Niklaus Wirth entre los años 1968 y 1969, y publicado en 1970. Su objetivo era crear un lenguaje que facilitara el aprendizaje de programación a sus alumnos, utilizando la programación estructurada y estructuración de datos. Sin embargo, con el tiempo su utilización excedió el ámbito académico para convertirse en una herramienta para la creación de aplicaciones de todo tipo.
+Pascal se caracteriza por ser un lenguaje de programación fuertemente tipado. Esto implica que, por un lado, el código está dividido en porciones fácilmente legibles llamadas funciones o procedimientos, lo que facilita la utilización de la programación estructurada en oposición al antiguo estilo de la programación monolítica; y, por otro, que el tipo de dato de todas las variables debe ser declarado previamente para que su uso quede habilitado.</string>
+    <string name="go_info">Go es un lenguaje de programación concurrente y compilado inspirado en la sintaxis de C, que intenta ser dinámico como Python y con el rendimiento de C o C++. Ha sido desarrollado por Google9​ y sus diseñadores iniciales fueron Robert Griesemer, Rob Pike y Ken Thompson. 10​ Actualmente está disponible en formato binario para los sistemas operativos Windows, GNU/Linux, FreeBSD y Mac OS X, pudiendo también ser instalado en estos y en otros sistemas mediante el código fuente.11​12​ Go es un lenguaje de programación compilado, concurrente, imperativo, estructurado, orientado a objetos y con recolector de basura que de momento es soportado en diferentes tipos de sistemas UNIX,
+        incluidos Linux, FreeBSD, Mac OS X y Plan 9 (puesto que parte del compilador está basado en un trabajo previo sobre el sistema operativo Inferno). Las arquitecturas soportadas son i386, amd64 y ARM.</string>
+
     <string name="title_activity_programing_languages">ScrollingActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
