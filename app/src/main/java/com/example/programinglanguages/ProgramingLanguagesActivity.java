@@ -10,13 +10,22 @@ package com.example.programinglanguages;
         import androidx.appcompat.app.AppCompatActivity;
         import androidx.appcompat.widget.Toolbar;
 
+        import android.os.Handler;
+        import android.os.Looper;
         import android.view.View;
         import android.widget.ImageView;
         import android.widget.TextView;
+        import android.widget.Toast;
+
+        import java.io.IOException;
+        import java.util.concurrent.ExecutorService;
+        import java.util.concurrent.Executors;
 
 public class ProgramingLanguagesActivity extends AppCompatActivity {
     ImageView imageProgramingLanguage;
     TextView infoProgramingLanguage;
+    ExecutorService ejecutor;
+    Handler handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +46,32 @@ public class ProgramingLanguagesActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();*/
+                final Sendinblue sendinblue=new Sendinblue();
+                ejecutor.execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        //trabajo en segundo plano
+                        try {
+                            sendinblue.sendMessage();
+                        } catch (IOException e) {
+                            Toast.makeText(ProgramingLanguagesActivity.this,"error al enviar mensaje",Toast.LENGTH_SHORT).show();
+                            e.printStackTrace();
+                        }
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(ProgramingLanguagesActivity.this,"Mensaje enviado",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                });
+
             }
         });
+
+        ejecutor = Executors.newSingleThreadExecutor();
+        handler = new Handler(Looper.getMainLooper());
     }
 }
